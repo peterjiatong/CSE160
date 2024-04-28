@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 Assignment 2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+  
+    <br>
+    Camera Angle X<input type="range" min="-90" max="90" value="0" class="slider" id="angleXSlide">
+    Camera Angle Y<input type="range" min="-90" max="90" value="5" class="slider" id="angleYSlide">
+    <hr>
+
+    <p>First level joint</p>
+    Left Arm<input type="range" min="-10" max="10" value="0" class="slider" id="leftarmSlide">
+    <button type="button" id="leftarmButtonOn">ON</button>
+    <button type="button" id="leftarmButtonOff">OFF</button>
+    <br>
+    Right Arm <input type="range" min="-10" max="10" value="0" class="slider" id="rightarmSlide">
+    <button type="button" id="rightarmButtonOn">ON</button>
+    <button type="button" id="rightarmButtonOff">OFF</button>
+    <br>
+    Left Upper Leg<input type="range" min="-10" max="10" value="0" class="slider" id="leftUpperLegSlide">
+    <button type="button" id="leftUpperLegButtonOn">ON</button>
+    <button type="button" id="leftUpperLegButtonOff">OFF</button>
+    <br>
+    right Upper Leg<input type="range" min="-10" max="10" value="0" class="slider" id="rightUpperLegSlide">
+    <button type="button" id="rightUpperLegButtonOn">ON</button>
+    <button type="button" id="rightUpperLegButtonOff">OFF</button>
+    <hr>
+
+    <p>Second level joint</p>
+    Left Hand<input type="range" min="-10" max="10" value="0" class="slider" id="lefthandSlide">
+    <button type="button" id="lefthandButtonOn">ON</button>
+    <button type="button" id="lefthandButtonOff">OFF</button>
+    <br>
+    right Hand<input type="range" min="-10" max="10" value="0" class="slider" id="righthandSlide">
+    <button type="button" id="righthandButtonOn">ON</button>
+    <button type="button" id="righthandButtonOff">OFF</button>
+    <br>
+    Left Lower Leg<input type="range" min="-10" max="10" value="0" class="slider" id="leftLowerLegSlide">
+    <button type="button" id="leftLowerLegButtonOn">ON</button>
+    <button type="button" id="leftLowerLegButtonOff">OFF</button>
+    <br>
+    right Lower Leg<input type="range" min="-10" max="10" value="0" class="slider" id="rightLowerLegSlide">
+    <button type="button" id="rightLowerLegButtonOn">ON</button>
+    <button type="button" id="rightLowerLegButtonOff">OFF</button>
+    <hr>
+
+    <p>Third level joint</p>
+    Left Foot<input type="range" min="-10" max="10" value="0" class="slider" id="leftFootSlide">
+    <button type="button" id="leftFootButtonOn">ON</button>
+    <button type="button" id="leftFootButtonOff">OFF</button>
+    <br>
+    right Foot<input type="range" min="-10" max="10" value="0" class="slider" id="rightFootSlide">
+    <button type="button" id="rightFootButtonOn">ON</button>
+    <button type="button" id="rightFootButtonOff">OFF</button>
+
+    
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="asg2.js"></script>
+  </body>
+</html>
