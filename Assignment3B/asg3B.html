@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 Assignment 2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <br>
+    Little Story: Waked up at a maze, you need to find the way to escape
+    <br>
+    (if you can find the way, or if you want to view the map, please set MoveCameraY to true and rotate camera on Y axis)
+    <hr>
+    <br>
+    FOV<input type="range" min="30" max="70" value="50" class="slider" id="FOVXSlide">
+    ViewCameraY
+    <button type="button" id="YOn">ON</button>
+    <button type="button" id="YOff">OFF</button>
+    <hr>
+    <p> Feature: </p>
+    <p> 1. all features from assignment 3a</p>
+    <p> 2. Randomized maze every time you refresh the page</p>
+    <p> 3. Implement camera movement: </p>
+    <p>W - move the camera forward | A - move the camera to the left | S - move the camera backwards | D - move the camera to the right</p>
+    <p> 4. Key commands for rotation work. Use Q (rotate left) & E (rotate right).</p>
+    <p>To make you rotate your camera easier, use Shift + Q or E to rotate your camera 90 degree</p>
+    <p> 5. rotate camera using mouse</p>
+    <p> 6. Perspective camera implemented. (FOV adjustment)</p>
+    <p> 7. a little story</p>
+
+
+    
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="asg3B.js"></script>
+  </body>
+</html>
