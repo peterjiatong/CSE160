@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CSE160 Assignment 5A</title>
+</head>
+<body>
+    <style>
+        #c {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <p>Features: 3 lights:(THREE.RectAreaLight, THREE.DirectionalLight, and THREE.PointLight), camera control with mouse, skybox, and 20+ shapes</p>
+    <canvas id="c"></canvas>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://threejs.org/build/three.module.js",
+            "three/addons/": "https://threejs.org/examples/jsm/"
+          }
+        }
+      </script>
+    <script type="module" src="asg5B.js"></script>
+</body>
+</html>
