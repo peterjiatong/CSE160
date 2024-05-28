@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE160 Assignment 2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p id="numdot"> XXX </p>
+    <!-- FOV<input type="range" min="30" max="70" value="50" class="slider" id="FOVXSlide"> -->
+    <!-- ViewCameraY -->
+    <!-- <button type="button" id="YOn">ON</button>
+    <button type="button" id="YOff">OFF</button> -->
+
+    <button type="button" id="NOn">Normal ON</button>
+    <button type="button" id="NOff">Normal OFF</button>
+    <br>
+    Light: 
+    <button type="button" id="LOn">ON</button>
+    <button type="button" id="LOff">OFF</button>
+    <br>
+    Specular Light: 
+    <button type="button" id="SLOn">ON</button>
+    <button type="button" id="SLOff">OFF</button> (This only work when light is ON)
+    <br>
+    Light Animation: 
+    <button type="button" id="LAOn">ON</button>
+    <button type="button" id="LAOff">OFF</button>
+    <br>
+    Light Pos X<input type="range" min="-250" max="250" value="0" class="slider" id="lightx">
+    Light Pos Y<input type="range" min="-250" max="250" value="0" class="slider" id="lighty">
+    Light Pos Z<input type="range" min="-250" max="250" value="0" class="slider" id="lightz">
+
+    <hr>
+    <p>I reused most part of my code from Assignment 3, but instead of generate a maze, I use only a Cube and a Sphere for this one</p>
+    <p> Feature: </p>
+    <p> 1. Have at least one cube and Created a sphere</p>
+    <p> 2. Button to visualize normals with color</p>
+    <p> 3. 3 types of light added (ambient, diffuse and specular), and a visual marker shows the location of the light</p>
+    <p> 4. A user interface button to turn on and off lighting</p>
+    <p> 5. The point light moves around the world over time, you can use slider to change its location, and use button to make the point light stop moving</p>
+    <hr>
+    <p> Camera movement: </p>
+    <p> Use W, A, S, D for move forward, backward, left and right</p>
+    <p> Use Q or E to rotate camera to left or right, use Shift & Q or Shift & E to rotate your camera 90 degree to left or right</p>
+    <p> Or you can also rotate camera using mouse</p>
+    
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="asg4.js"></script>
+
+  </body>
+</html>
