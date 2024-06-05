@@ -73,54 +73,56 @@ function main() {
 		});
 	});
 
-	mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
-		mtl.preload();
-		const objLoader = new OBJLoader();
-		objLoader.setMaterials(mtl);
-		objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
-			scene.add(obj);
-			obj.position.set(-1,0,2.5); // position obj
-			obj.scale.set(.02,.02,.02); // scale obj
-			obj.rotation.set( -Math.PI / 2, 0 , Math.PI/ 2); // rotate obj
-		});
-	});
+	// Commented the fences out because it lags the whole world
+
+	// mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
+	// 	mtl.preload();
+	// 	const objLoader = new OBJLoader();
+	// 	objLoader.setMaterials(mtl);
+	// 	objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
+	// 		scene.add(obj);
+	// 		obj.position.set(-1,0,2.5); // position obj
+	// 		obj.scale.set(.02,.02,.02); // scale obj
+	// 		obj.rotation.set( -Math.PI / 2, 0 , Math.PI/ 2); // rotate obj
+	// 	});
+	// });
 
 
-	mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
-		mtl.preload();
-		const objLoader = new OBJLoader();
-		objLoader.setMaterials(mtl);
-		objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
-			scene.add(obj);
-			obj.position.set(-3,0,5); // position obj
-			obj.scale.set(.02,.02,.02); // scale obj
-			obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
-		});
-	});
+	// mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
+	// 	mtl.preload();
+	// 	const objLoader = new OBJLoader();
+	// 	objLoader.setMaterials(mtl);
+	// 	objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
+	// 		scene.add(obj);
+	// 		obj.position.set(-6,0,5); // position obj
+	// 		obj.scale.set(.05,.02,.02); // scale obj
+	// 		obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
+	// 	});
+	// });
 
-	mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
-		mtl.preload();
-		const objLoader = new OBJLoader();
-		objLoader.setMaterials(mtl);
-		objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
-			scene.add(obj);
-			obj.position.set(-7,0,5); // position obj
-			obj.scale.set(.02,.02,.02); // scale obj
-			obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
-		});
-	});
+	// mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
+	// 	mtl.preload();
+	// 	const objLoader = new OBJLoader();
+	// 	objLoader.setMaterials(mtl);
+	// 	objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
+	// 		scene.add(obj);
+	// 		obj.position.set(-7,0,5); // position obj
+	// 		obj.scale.set(.02,.02,.02); // scale obj
+	// 		obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
+	// 	});
+	// });
 
-	mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
-		mtl.preload();
-		const objLoader = new OBJLoader();
-		objLoader.setMaterials(mtl);
-		objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
-			scene.add(obj);
-			obj.position.set(-11,0,5); // position obj
-			obj.scale.set(.02,.02,.02); // scale obj
-			obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
-		});
-	});
+	// mtlLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.mtl", (mtl) => {
+	// 	mtl.preload();
+	// 	const objLoader = new OBJLoader();
+	// 	objLoader.setMaterials(mtl);
+	// 	objLoader.load("13076_Gothic_Wood_Fence_Panel_v2_l3.obj", (obj) => {
+	// 		scene.add(obj);
+	// 		obj.position.set(-11,0,5); // position obj
+	// 		obj.scale.set(.02,.02,.02); // scale obj
+	// 		obj.rotation.set( -Math.PI / 2, 0 , 0); // rotate obj
+	// 	});
+	// });
 
 	mtlLoader.load("building_05.mtl", (mtl) => {
 		mtl.preload();
